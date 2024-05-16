@@ -1,0 +1,14 @@
+
+<h2>Lista de usuarios</h2>
+
+{{!-- Iterar un array --}}
+
+{{#each users}}
+  <div>
+    <p>------------------------</p>
+    <p>Nombre: {{this.name}}</p>
+    <p>Apellido: {{this.lastName}}</p>
+  </div>
+{{/each}}
+
+<script src="/js/index.js"></script>
