@@ -32,7 +32,15 @@ chatBox.addEventListener("keydown", (event) => {
 
 
 socket.on("messageLog", (data) => {
-  console.log(data);
+  let messageLog = document.getElementById("messageLog");
+  let messages = "";
+  data.forEach( msg => {
+      messages = messages + `${msg.user} dice: ${msg.message} </br>`;
+    });
+
+  messageLog.innerHTML = messages;
+
+
 })
 
 socket.on("newUser", (data) => {

@@ -29,7 +29,6 @@ socketServer.on("connection", (socket) => {
   console.log("Nuevo usuario conectado");
   socket.on("message", (data) => {
       messages.push(data);
-      console.log(messages);
       socketServer.emit("messageLog", messages);
   })
 
