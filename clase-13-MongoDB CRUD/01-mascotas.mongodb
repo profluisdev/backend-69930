@@ -1,0 +1,34 @@
+// Creamos la base de datos
+use("baseCRUD");
+
+// Creamos la colección
+
+// db.createCollection("mascotas")
+
+// Agregar un documento
+// db.mascotas.insertOne({nombre: "Firulais", especie: "Perro", edad: 2})
+
+// Agregamos más de un documento
+// db.mascotas.insertMany([
+//   {
+//     nombre: "Piolin",
+//     especie: "Pájaro",
+//     edad: 3,
+//   },
+//   {
+//     nombre: "Garfield",
+//     especie: "Gato",
+//     edad: 5,
+//   },
+// ]);
+
+// Buscamos todos los documentos
+// db.mascotas.find()
+
+// Buscamos documentos con criterio de búsqueda
+// db.mascotas.find({ especie: "Gato" })
+// db.mascotas.find({ especie: "Perro" })
+
+// Contar la cantidad de documentos en la colección
+
+db.mascotas.count()

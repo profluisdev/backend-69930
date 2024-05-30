@@ -1,0 +1,86 @@
+use("colegio");
+
+// db.createCollection("estudiantes")
+
+// db.estudiantes.insertMany([
+//   {
+//     nombre: "Juan",
+//     apellido: "Perez",
+//     curso: "1A",
+//     edad: 10,
+//     correo: "jp@gmail.com",
+//     sexo: "M",
+//   },
+//   {
+//     nombre: "Maria",
+//     apellido: "Lopez",
+//     curso: "1A",
+//     edad: 9,
+//     correo: "ml@gmail.com",
+//     sexo: "F",
+//   },
+//   {
+//     nombre: "Pedro",
+//     apellido: "Gomez",
+//     curso: "1B",
+//     edad: 11,
+//     correo: "pg@gmail.com",
+//     sexo: "M",
+//   },
+//   {
+//     nombre: "Ana",
+//     apellido: "Martinez",
+//     curso: "1B",
+//     edad: 10,
+//     correo: "am@gmail.com",
+//     sexo: "F",
+//   },
+//   {
+//     nombre: "Luis",
+//     apellido: "Rodriguez",
+//     curso: "1A",
+//   },
+// ]);
+
+// Realizar una búsqueda para obtener a todos los estudiantes.
+// db.estudiantes.find()
+
+// Realizar una búsqueda para obtener a todos los estudiantes de sexo M
+// db.estudiantes.find({ sexo: "M" })
+
+// Realizar una búsqueda para obtener a todos los estudiantes de sexo F
+// db.estudiantes.find({ sexo: "F" })
+
+// Realizar un conteo para obtener el número de documentos totales.
+// db.estudiantes.countDocuments()
+
+// Realizar un conteo para obtener el número de documentos totales del sexo F.
+// db.estudiantes.countDocuments({ sexo: "F" })
+
+// Realizar un conteo para obtener el número de documentos totales del sexo M.
+// db.estudiantes.countDocuments({ sexo: "M", nombre: "Pedro" })
+
+// Proyecciones
+
+// db.estudiantes.find({}, { nombre: 1 });
+// db.estudiantes.find({}, { nombre: 1, sexo: 1 });
+
+// Sort
+
+// db.estudiantes.find().sort({ nombre: 1 });
+// db.estudiantes.find().sort({ nombre: -1 });
+
+// db.estudiantes.insertMany([
+//   { nombre: "Diego Hernan", apellido: "Manes", curso: "3A", sexo: "M", edad: 15 },
+//   { nombre: "Mariana Soledad", apellido: "Gomez", curso: "3A", sexo: "F", edad: 15 },
+//   { nombre: "Lucas", apellido: "Perez", curso: "3A", sexo: "M", edad: 15 },
+//   { nombre: "Sofia Maria", apellido: "Gonzalez", curso: "3A", sexo: "F", edad: 15 },
+//   { nombre: "Juan Jorge", apellido: "Garcia", curso: "3A", sexo: "M", edad: 15 },
+// ]);
+
+// Limit
+// db.estudiantes.find().sort({ nombre: 1 }).limit(3)
+// db.estudiantes.find().sort({ nombre: -1 }).limit(3)
+
+// skip
+// db.estudiantes.find().sort({ nombre: 1 }).skip(4).limit(2)
